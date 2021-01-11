@@ -13,5 +13,9 @@ module.exports = {
         } else {
             // mutate for development...
         }
-    }
+    },
+    devServer: {
+        port: process.env.PORT,
+        https: false
+    },
 }
