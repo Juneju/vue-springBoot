@@ -1,5 +1,4 @@
 import request from "@/utils/request";
-import qs from 'qs'
 export function testGet(){
     return request({
         url:'/testGet',
@@ -13,6 +12,13 @@ export function testPost(){
         url:'/testPost',
         method:'post',
         params:{p:1},
-        data:qs.stringify({s:2})
+        data: {s:2}
+    })
+}
+
+export function testMyBatis(){
+    return request({
+        url:'/testMyBatis',
+        method:'get'
     })
 }

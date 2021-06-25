@@ -21,7 +21,7 @@ public class TestController {
         return "get success";
     }
     @PostMapping("testPost")
-    public String testPost(int p, @RequestParam Test s){
+    public String testPost(@RequestParam int p,@RequestBody Test s){
         logger.info("post value:{}",p);
         logger.info("post value2:{}",s.getS());
         return "post success";

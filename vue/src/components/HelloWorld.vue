@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import {testGet,testPost} from '@/api/hello-api'
+import {testGet,testPost,testMyBatis} from '@/api/hello-api'
 export default {
   name: 'HelloWorld',
   props: {
@@ -20,6 +20,9 @@ export default {
         console.log(response)
       })
       testPost().then(response=>{
+        console.log(response)
+      })
+      testMyBatis().then(response=>{
         console.log(response)
       })
     }
